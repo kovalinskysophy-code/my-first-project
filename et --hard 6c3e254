@@ -1,0 +1,10 @@
+[33m0cf74cf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/compute-service[m[33m)[m HEAD@{0}: reset: moving to HEAD~2
+[33m6c3e254[m[33m ([m[1;31morigin/feature/compute-service[m[33m)[m HEAD@{1}: checkout: moving from feature/compute-service to feature/compute-service
+[33m6c3e254[m[33m ([m[1;31morigin/feature/compute-service[m[33m)[m HEAD@{2}: checkout: moving from master to feature/compute-service
+[33m746e32a[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{3}: checkout: moving from feature/compute-service to master
+[33m6c3e254[m[33m ([m[1;31morigin/feature/compute-service[m[33m)[m HEAD@{4}: checkout: moving from feature/compute-service to feature/compute-service
+[33m6c3e254[m[33m ([m[1;31morigin/feature/compute-service[m[33m)[m HEAD@{5}: checkout: moving from master to feature/compute-service
+[33m6c3e254[m[33m ([m[1;31morigin/feature/compute-service[m[33m)[m HEAD@{6}: commit: feat: implement compute service with async matrix operations
+[33m2f96eac[m HEAD@{7}: commit: Изменен вывод
+[33m0cf74cf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/compute-service[m[33m)[m HEAD@{8}: commit: Изменен порт
+[33m746e32a[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{9}: commit (initial): Первый коммит
