@@ -6,19 +6,18 @@ class ComputationEngine(private val storage: InMemoryStorage) {
     private val scope = CoroutineScope(Dispatchers.Default)
 
     fun startComputation(taskId: String, request: ComputeRequest) {
-        // В ComputationEngine.kt, внутри startComputation:
+
 
         scope.launch {
             try {
                 val result = withContext(Dispatchers.Default) {
                     delay(2000)
                     when (request.operation.lowercase()) {
-                        "determinant" -> calculateDeterminant(request.matrix).toString()  // ← .toString()
-                        "transpose" -> transposeMatrix(request.matrix).toString()         // ← .toString()
+                        "determinant" -> calculateDeterminant(request.matrix).toString()
                         else -> throw IllegalArgumentException("Unknown operation")
                     }
                 }
-                storage.saveResult(taskId, result)  // result теперь String
+                storage.saveResult(taskId, result)
             } catch (e: Exception) {
                 storage.saveError(taskId, e.message ?: "Unknown error")
             }
@@ -49,17 +48,6 @@ class ComputationEngine(private val storage: InMemoryStorage) {
                 row.add(matrix[i][j])
             }
             result.add(row)
-        }
-        return result
-    }
-
-    private fun transposeMatrix(matrix: List<List<Double>>): List<List<Double>> {
-        val n = matrix.size
-        val result = MutableList(n) { MutableList(n) { 0.0 } }
-        for (i in 0 until n) {
-            for (j in 0 until n) {
-                result[j][i] = matrix[i][j]
-            }
         }
         return result
     }
